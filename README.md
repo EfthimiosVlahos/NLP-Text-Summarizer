@@ -11,9 +11,6 @@ Table of Contents:
 - [8. Training Pipeline](#8-training-pipeline)
 - [9. Prediction Pipeline and User App](#9-prediction-pipeline-and-user-app)
 - [10. Final CI/CD Deployment on AWS](#10-final-cicd-deployment-on-aws)
-
-Welcome to the NLP Text Summarization project—a testament to advanced Natural Language Processing (NLP) expertise. This project is driven by sophisticated tools and scripts, including the influential Pegasus model. As you navigate through this endeavor, you'll explore its intricate components, highlighting my proficiency in machine learning and NLP. The project is structured around the following key elements:
-
 ## 1. Project Template Creation
 
 - **GitHub Repository Setup:**
