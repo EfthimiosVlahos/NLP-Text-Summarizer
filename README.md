@@ -1,130 +1,111 @@
-# End to end Text-Summarizer-Project
+# NLP Text Summarization Project Overview
 
-## Workflows
+Table of Contents:
+- [1. Project Template Creation](#1-project-template-creation)
+- [2. Logging and Utils](#2-logging-and-utils)
+- [3. Entire Project Experiment](#3-entire-project-experiment)
+- [4. Project Workflows](#4-project-workflows)
+- [5. Data Ingestion](#5-data-ingestion)
+- [6. Data Validation](#6-data-validation)
+- [7. Data Transformation](#7-data-transformation)
+- [8. Training Pipeline](#8-training-pipeline)
+- [9. Prediction Pipeline and User App](#9-prediction-pipeline-and-user-app)
+- [10. Final CI/CD Deployment on AWS](#10-final-cicd-deployment-on-aws)
 
-1. Update config.yaml
-2. Update params.yaml
-3. Update entity
-4. Update the configuration manager in src config
-5. update the conponents
-6. update the pipeline
-7. update the main.py
-8. update the app.py
+Welcome to the NLP Text Summarization project—a testament to advanced Natural Language Processing (NLP) expertise. This comprehensive project is driven by sophisticated tools and scripts, including the influential Pegasus model. As you navigate through this endeavor, you'll explore its intricate components, highlighting my proficiency in machine learning and NLP. The project is structured around the following key elements:
 
+## 1. Project Template Creation
 
-# How to run?
-### STEPS:
+- **GitHub Repository Setup:**
+  - Create a dedicated GitHub repository for the project.
 
-Clone the repository
+- **Directory Structure:**
+  - Define a structured project directory hierarchy.
+  - Include an `__init__.py` file for Python package/module compatibility.
+  - List all necessary project files and their locations.
 
-```bash
-https://github.com/EfthimiosVlahos/NLP-Text-Summarizer.git
-```
-### STEP 01- Create a conda environment after opening the repository
+- **File Path Handling:**
+  - Utilize the `Path` library for cross-OS compatible file paths.
+  - Separate directory and file names with `os.path.split()`.
 
-```bash
-conda create -n summary python=3.8 -y
-```
+- **Automation:**
+  - Use `os.makedirs()` to create folders and directories dynamically.
 
-```bash
-conda activate summary
-```
-
-
-### STEP 02- install the requirements
-```bash
-pip install -r requirements.txt
-```
-
-
-```bash
-# Finally run the following command
-python app.py
-```
-
-Now,
-```bash
-open up you local host and port
-```
+- **Logging Implementation:**
+  - Implement a robust logging system with Python's `logging` module.
+  - Verify file existence with `os.path.exists(filepath)` and retrieve file size with `os.path.getsize(filepath)`.
+  - Properly manage project files with `with open(filepath, filename) as f`.
 
 
-```bash
-Author: Efthimios vlahos
-Data Scientist
-Email: vlahos89@gmail.com
+## 2. Logging and Utils
 
-```
+- **Custom Logging:**
+  - Develop a custom logging system tailored for machine learning tasks.
 
+- **Utility Functions (UTILS):**
+  - Create utility functions in a separate 'UTILS' module to enhance code modularity and reusability.
+  - Store commonly used functions for easy access.
 
-
-# AWS-CICD-Deployment-with-Github-Actions
-
-## 1. Login to AWS console.
-
-## 2. Create IAM user for deployment
-
-	#with specific access
-
-	1. EC2 access : It is virtual machine
-
-	2. ECR: Elastic Container registry to save your docker image in aws
+- **Configuration Management:**
+  - Utilize 'Configbox' for managing configurations efficiently.
+  - Access configuration values using keys for convenience.
 
 
-	#Description: About the deployment
+## 3. Entire Project Experiment
 
-	1. Build docker image of the source code
+- **Comprehensive Overview:**
+  - Conduct an in-depth Jupyter notebook experiment to provide a holistic understanding of the entire project.
+  - Ideal for machine learning engineers seeking profound insights.
 
-	2. Push your docker image to ECR
-
-	3. Launch Your EC2 
-
-	4. Pull Your image from ECR in EC2
-
-	5. Lauch your docker image in EC2
-
-	#Policy:
-
-	1. AmazonEC2ContainerRegistryFullAccess
-
-	2. AmazonEC2FullAccess
-
-	
-## 3. Create ECR repo to store/save docker image
-
-	
-## 4. Create EC2 machine (Ubuntu) 
-
-## 5. Open EC2 and Install docker in EC2 Machine:
-	
-	
-	#optinal
-
-	sudo apt-get update -y
-
-	sudo apt-get upgrade
-	
-	#required
-
-	curl -fsSL https://get.docker.com -o get-docker.sh
-
-	sudo sh get-docker.sh
-
-	sudo usermod -aG docker ubuntu
-
-	newgrp docker
-	
-# 6. Configure EC2 as self-hosted runner:
-    setting>actions>runner>new self hosted runner> choose os> then run command one by one
+- **Hands-On Exploration:**
+  - Gain practical experience by following step-by-step instructions within the experiment.
+  - Navigate through project workflows and components to grasp the project's intricacies.
 
 
-# 7. Setup github secrets:
+## 4. Project Workflows
 
-    AWS_ACCESS_KEY_ID=
+- **Step-by-Step Guide:**
+  - Access a comprehensive guide outlining step-by-step workflows for project execution.
+  - Ensure a systematic approach from data ingestion to triumphant deployment.
 
-    AWS_SECRET_ACCESS_KEY=
+## 5. Data Ingestion
 
-    AWS_REGION = 
+- **Initial Data Preparation:**
+  - Set up the data ingestion configuration.
+  - Utilize 'params.yaml' and '@dataclass()' for structured data handling.
 
-    AWS_ECR_LOGIN_URI = 
+## 6. Data Validation
 
-    ECR_REPOSITORY_NAME = 
+- **Exploration and Validation:**
+  - Conduct data validation processes.
+  - Emphasize data quality and integrity.
+
+## 7. Data Transformation
+
+- **Data Preprocessing:**
+  - Cover crucial data preprocessing steps.
+  - Highlight feature engineering and data preparation.
+
+## 8. Training Pipeline
+
+- **Model Training:**
+  - Showcase model training using cutting-edge NLP techniques, including the Pegasus model.
+  - A valuable resource for ML engineers aspiring to enhance their model development skills.
+
+## 9. Prediction Pipeline and User App
+
+- **Prediction Pipeline and User-Friendly App:**
+  - Journey through the development of a prediction pipeline and a user-friendly summarization application.
+  - Demonstrating the practical application of NLP models, including Pegasus, and bridging the gap between complex technology and end-users.
+
+## 10. Final CI/CD Deployment on AWS
+
+- **CI/CD Deployment on AWS:**
+  - Culmination of the project's journey with seamless AWS deployment, incorporating CI/CD best practices.
+  - Ideal for ML engineers with a vision for scaling and deploying models, including Pegasus, in production environments.
+
+
+
+
+
+
